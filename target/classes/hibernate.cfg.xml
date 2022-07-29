@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE hibernate-configuration SYSTEM
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration xmlns="http://www.hibernate.org/xsd/orm/cfg">
+    <session-factory>
+<!--        <property name="connection.url">jdbc:mysql://localhost:3306/messenger</property>-->
+<!--        <property name="connection.username">root</property>-->
+<!--        <property name="connection.password">2063DMTkp7548</property>-->
+<!--        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>-->
+
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="connection.url">jdbc:postgresql://localhost:5432/messenger</property>
+        <property name="connection.username">postgres</property>
+        <property name="connection.password">2063DMTkp7548</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+
+    </session-factory>
+</hibernate-configuration>
