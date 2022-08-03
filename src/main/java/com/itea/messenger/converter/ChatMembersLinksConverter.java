@@ -11,6 +11,8 @@ public class ChatMembersLinksConverter {
         chatMembersLinks.setId(chatMembersLinksDto.getId());
         chatMembersLinks.setChatID(chatMembersLinksDto.getChatID());
         chatMembersLinks.setUserID(chatMembersLinksDto.getChatID());
+        chatMembersLinks.setJoinDate(chatMembersLinksDto.getJoinDate());
+        chatMembersLinks.setViewDate(chatMembersLinksDto.getViewDate());
         return chatMembersLinks;
     }
     public ChatMembersLinksDto dtoFromChatMembersLinkEntity(ChatMembersLinks chatMembersLinks){
@@ -18,6 +20,8 @@ public class ChatMembersLinksConverter {
         chatMembersLinksDto.setId(chatMembersLinks.getId());
         chatMembersLinksDto.setChatID(chatMembersLinks.getChatID());
         chatMembersLinksDto.setUserID(chatMembersLinks.getUserID());
+        chatMembersLinksDto.setJoinDate(chatMembersLinks.getJoinDate());
+        chatMembersLinksDto.setViewDate(chatMembersLinks.getViewDate());
         return chatMembersLinksDto;
     }
 }

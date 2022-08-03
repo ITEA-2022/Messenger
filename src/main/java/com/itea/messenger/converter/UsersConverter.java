@@ -14,6 +14,7 @@ public class UsersConverter {
         users.setLogin(usersDto.getLogin());
         users.setPassword(usersDto.getPassword());
         users.setPhotoId(usersDto.getPhotoId());
+        users.setLastLoginDate(users.getLastLoginDate());
         return users;
     }
     public UsersDto dtoFromUsersEntity(Users users){
@@ -24,6 +25,7 @@ public class UsersConverter {
         usersDto.setLogin(users.getLogin());
         usersDto.setPassword(users.getPassword());
         usersDto.setPhotoId(users.getPhotoId());
+        usersDto.setLastLoginDate(users.getLastLoginDate());
         return usersDto;
     }
 }

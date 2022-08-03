@@ -7,4 +7,6 @@ public class ChatMembersLinksDto {
     private Long id;
     private Long chatID;
     private Long userID;
+    private int joinDate;
+    private int viewDate;
 }

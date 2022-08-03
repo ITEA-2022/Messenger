@@ -19,4 +19,10 @@ public class ChatMembersLinks {
 
     @Column (nullable = false, length = 25)
     private Long userID;
+
+    @Column
+    private int joinDate;
+
+    @Column
+    private int viewDate;
 }

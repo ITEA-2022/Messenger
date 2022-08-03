@@ -30,4 +30,7 @@ public class Users {
     @Column
     private int age;
 
+    @Column
+    private double lastLoginDate;
+
 }
